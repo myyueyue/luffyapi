@@ -94,7 +94,7 @@ DATABASES = {
         'NAME': 'luffy',
         'USER':'ming',
         'PASSWORD':'Luffy123?',
-        'HOST':'175.178.180.96',
+        'HOST':'175.178.180.6',
         'PORT':3306
 
     },
