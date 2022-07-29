@@ -96,7 +96,7 @@ class CodeUserSerilaizer(serializers.ModelSerializer):
 
 
 class UserRegrsterSerilaizer(serializers.ModelSerializer):
-    code=serializers.CharField(max_length=6,min_length=6)
+    code=serializers.CharField(max_length=6,min_length=6,write_only=True)
     class Meta:
         model = models.User
         fields = ['telephone', 'password','code']
