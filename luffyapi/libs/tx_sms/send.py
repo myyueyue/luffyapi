@@ -9,7 +9,7 @@ from . import settings
 def get_code():
     import random
     s_code=''
-    for i in range(4):
+    for i in range(6):
         s_code+=str(random.randint(0,9))
     return s_code
 
