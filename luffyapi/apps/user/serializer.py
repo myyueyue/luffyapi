@@ -99,9 +99,10 @@ class UserRegrsterSerilaizer(serializers.ModelSerializer):
     code=serializers.CharField(max_length=6,min_length=6,write_only=True)
     class Meta:
         model = models.User
-        fields = ['telephone', 'password','code']
+        fields = ['telephone', 'password','code','username']
         extra_kwargs = {
-            'password': {'max_length':16,'min_length':16,}
+            'password': {'max_length':16,'min_length':16,},
+            'username':{'read_only':True}
         }
     def validate_password(self, attrs):
         password=attrs.get('password')

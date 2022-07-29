@@ -81,3 +81,7 @@ class SendSmSView(ViewSet):
 class RegisterView(GenericViewSet,CreateModelMixin):
     queryset = models.User.objects.all()
     serializer=serializer.UserRegrsterSerilaizer
+    def create(self, request, *args, **kwargs):
+        response=super().create(request, *args, **kwargs)
+        username=response.data.get('username')
+        return APIResponse(code=1,msg='注册成功',username=username)
