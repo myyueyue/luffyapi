@@ -47,3 +47,4 @@ class CourseSearch(GenericViewSet,ListModelMixin):
     pagination_class = PageNumberPagination
     filter_backends = [SearchFilter]
     search_fields=['name']
+

@@ -58,3 +58,5 @@ class CourseChapterModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.CourseChapter
         fields = ['chapter', 'name', 'summary', 'coursesections']
+
+

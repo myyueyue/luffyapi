@@ -18,6 +18,7 @@ from django_filters.filterset import FilterSet
 from django_filters import filters
 
 
+
 class CourseFilter(FilterSet):
     # 区间过滤
     min_price = filters.NumberFilter(field_name='price', lookup_expr='gte')  # gte大于等于

@@ -221,3 +221,4 @@ class CourseSection(BaseModel):
     def section_type_name(self):
         return self.get_section_type_display()
 
+

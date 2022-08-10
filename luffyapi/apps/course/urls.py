@@ -17,3 +17,5 @@ router.register('search',views.CourseSearch,'search')
 urlpatterns = [
     path('', include(router.urls)),
 ]
+
+
